@@ -69,3 +69,7 @@ a:hover {
 .item {
   border: 1px solid #d8dbe2;
 }
+.content {
+  max-height: 100vh;
+  height: 100vh;
+}

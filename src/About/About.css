@@ -1,0 +1,36 @@
+.about {
+    margin: 0 50px 0 200px;
+    height: 90vh;
+    overflow: scroll;
+    bottom: 0;
+    padding-top: 50px;
+}
+
+.headline {
+    font-size: 40px;
+    float: right;
+    color: #495867;
+}
+
+.about a {
+    padding: 20px;
+    text-align: center;
+    display: inline;
+    color: #495867;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.about a:hover {
+    background: #b7cee8;
+    color: #577399;
+    transition: all 0.3s ease;
+}
+
+div p {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
