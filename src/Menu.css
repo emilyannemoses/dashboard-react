@@ -70,13 +70,3 @@ a:hover {
 a {
     text-decoration: none;
 }
-
-/* a {
-    cursor: pointer;
-    padding: 3px;
-  }
-  a:hover {
-    background: #b7cee8;
-    color: #fff;
-    transition: all 0.3s ease;
-  } */

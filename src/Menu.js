@@ -8,29 +8,9 @@ class Menu extends Component {
     constructor(props) {
       super(props)
       this.state = {
-        active: 'Home',
-        menuItems: [
-            'Home',
-            'Settings',
-            'About',
-            'Contact'
-        ]
+        active: 'Home'
       }
     }
-
-    // _toggleMenu = (menuItem) => {
-    //     const menuContainer = document.getElementById('menu');
-    //     let items = menuContainer.getElementsByClassName('item');
-    //     items = Array.from(items);
-    //     items.forEach(function(item){
-    //         item.addEventListener('click', function(){
-    //             let current = document.getElementsByClassName('active');
-    //             current[0].className = current[0].className.replace(' active', '');
-    //             this.className += ' active';
-    //         });
-    //     });
-    //     this.setState({ active: menuItem });
-    // }
 
     render() {
         return (
