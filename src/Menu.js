@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, 
-    Route,
-    NavLink, 
-    Link } from 'react-router-dom';
+    NavLink
+    } from 'react-router-dom';
 import menu from './Menu.css';
 
 class Menu extends Component {
@@ -19,19 +18,19 @@ class Menu extends Component {
       }
     }
 
-    _toggleMenu = (menuItem) => {
-        const menuContainer = document.getElementById('menu');
-        const items = menuContainer.getElementsByClassName('item');
-        items = Array.from(items);
-        items.forEach(function(item){
-            item.addEventListener('click', function(){
-                let current = document.getElementsByClassName('active');
-                current[0].className = current[0].className.replace(' active', '');
-                this.className += ' active';
-            });
-        });
-        this.setState({ active: menuItem });
-    }
+    // _toggleMenu = (menuItem) => {
+    //     const menuContainer = document.getElementById('menu');
+    //     let items = menuContainer.getElementsByClassName('item');
+    //     items = Array.from(items);
+    //     items.forEach(function(item){
+    //         item.addEventListener('click', function(){
+    //             let current = document.getElementsByClassName('active');
+    //             current[0].className = current[0].className.replace(' active', '');
+    //             this.className += ' active';
+    //         });
+    //     });
+    //     this.setState({ active: menuItem });
+    // }
 
     render() {
         return (
@@ -44,14 +43,14 @@ class Menu extends Component {
                     </div>
                     <div id="greetingDisplay" className="greeting" style={{display:'none'}}></div>
                 </div>
-                <nav className="menu" id="menu">
+                <div className="menu" id="menu">
                     <Router>
-                        <li><NavLink className="item" to="/home" activeStyle={{ menu }}>home</NavLink></li>
-                        <li><NavLink className="item" to="/settings" activeStyle={{ menu }}>settings</NavLink></li>
-                        <li><NavLink className="item" to="/about" activeStyle={{ menu }}>about</NavLink></li>
-                        <li><NavLink className="item" to="/contact" activeStyle={{ menu }}>contact</NavLink></li>
+                        <NavLink className="item" to="/home" activeStyle={{ menu }}>home</NavLink>
+                        <NavLink className="item" to="/settings" activeStyle={{ menu }}>settings</NavLink>
+                        <NavLink className="item" to="/about" activeStyle={{ menu }}>about</NavLink>
+                        <NavLink className="item" to="/contact" activeStyle={{ menu }}>contact</NavLink>
                     </Router>
-                </nav>
+                </div>
             </div>
         )
     }

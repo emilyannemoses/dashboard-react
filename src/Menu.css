@@ -36,8 +36,11 @@ input {
 .text {
     color: #495867;
 }
-li {
-    list-style-type: none;
+.menu {
+    display: block;
+}
+a {
+    display: block;
     color: #495867;
     margin: 0;
     padding: 15px;
@@ -46,8 +49,8 @@ li {
     letter-spacing: 1px;
     cursor: pointer;
 }
-li:hover {
-    background: #fff;
+a:hover {
+    background: #b7cee8;
     color: #577399;
     transition: all 0.3s ease;
 }
@@ -64,3 +67,16 @@ li:hover {
     color: #495867;
     transition: all 0.3s ease;
 }
+a {
+    text-decoration: none;
+}
+
+/* a {
+    cursor: pointer;
+    padding: 3px;
+  }
+  a:hover {
+    background: #b7cee8;
+    color: #fff;
+    transition: all 0.3s ease;
+  } */
