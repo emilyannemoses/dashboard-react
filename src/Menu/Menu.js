@@ -1,40 +1,35 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, 
-    NavLink
-    } from 'react-router-dom';
+import {
+    NavLink,
+    Route
+} from 'react-router-dom';
 import menu from './Menu.css';
-import Home from '../Home/Home';
-import settings from '../Settings/Settings'
+import Home from '../Home/Home'
+import Settings from '../Settings/Settings'
+import About from '../About/About'
+import Contact from '../Contact/Contact'
+import Greeting from '../Home/Greeting/Greeting'
 
 class Menu extends Component {
-    constructor(props) {
-      super(props)
-      this.state = {
-        active: 'Home'
-      }
-    }
 
     render() {
         return (
-            <div className="leftside-menu">
-                {/* CREATE GREETING COMPONENT FOR BELOW */}
-                <div className="user">
-            	    <div id="greetingContainer">
-                        <div className="text">Please enter your full name</div>
-                        <input id="name" type="text" />
-                    </div>
-                    <div id="greetingDisplay" className="greeting" style={{display:'none'}}></div>
+            <div>
+                <div className="leftside-menu menu" id="menu">
+                    <Greeting />
+                    <NavLink className="item" exact to="/" activeStyle={{ menu }}>home</NavLink>
+                    <NavLink className="item" exact to="/settings" activeStyle={{ menu }}>settings</NavLink>
+                    <NavLink className="item" exact to="/about" activeStyle={{ menu }}>about</NavLink>
+                    <NavLink className="item" exact to="/contact" activeStyle={{ menu }}>contact</NavLink>
                 </div>
-                <div className="menu" id="menu">
-                    <Router>
-                        <NavLink className="item" to="/home" activeStyle={{ menu }}><Home/>home</NavLink>
-                        <NavLink className="item" to="/settings" activeStyle={{ menu }}>settings</NavLink>
-                        <NavLink className="item" exact to="/about" activeStyle={{ menu }}>about</NavLink>
-                        <NavLink className="item" exact to="/contact" activeStyle={{ menu }}>contact</NavLink>
-                    </Router>
+                <div className="content">
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/settings" component={Settings} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contact" component={Contact} />
                 </div>
             </div>
-        )
+        );
     }
 }
 

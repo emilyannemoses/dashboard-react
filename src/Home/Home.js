@@ -1,30 +1,32 @@
 import React, {Component} from 'react';
 import './Home.css';
+import Greeting from './Greeting/Greeting';
+import Weather from './Weather/Weather';
+import Music from './Music/Music';
+import Date from './Date/Date'
+import Todo from './Todo/Todo';
 
 class Home extends Component {
-    // constructor(props) {
-    //   super(props)
-    //   this.state = {
-    //     active: 'Home'
-    //   }
-    // }
 
     render() {
         return (
             <div className="main-grid">
                 <div className="block one">
+                    <Greeting />
                     {/* <div id="time" className="time"></div>
                     <div id="greeting" className="timeGreeting"></div>
                     <p id="greetingDisplayFirst"></p> */}
                 </div>
   
                 <div className="block two">
+                    <Weather />
                     {/* <div id="weatherWidget" className="weatherWidget">93</div>
                     <div id="description" className="description">Clear</div>
                     <div id="homeCity" className="homeCity">Austin</div> */}
                 </div>
   
                 <div className="block three">
+                    <Music />
                     {/* <div className="music"><p>now playing on spotify</p></div>
                     <div className="info">
                     <div className="progress-bar">
@@ -49,12 +51,14 @@ class Home extends Component {
                 </div>
   
                 <div className="block four">
+                    <Date />
                     {/* <h1 id="date"></h1>
                     <a id="linkToCalendar" href="" target="_blank"></a>
                     <p><a href="">go to settings to edit calendar</a></p> */}
                 </div>
   
                 <div className="block five">
+                    <Todo />
                     {/* <div className="reminders">
                         <p>reminders</p>
                         <div className="reminder--btns" onclick="displayAddItem()">

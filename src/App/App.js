@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Menu from '../Menu/Menu';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +13,9 @@ class App extends Component {
   render() {
     return (
       <div id="dashboard-container" className="container">
-        <Menu />
+        <Router>
+          <Menu />
+        </Router>
         {/* main area will import:
         time/name, 
         weather,
