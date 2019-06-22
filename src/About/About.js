@@ -5,7 +5,10 @@ class About extends Component {
 
     render() {
         return (
-            <div>This is the About component</div>
+            <div>
+                <div className="about">About the developer</div>
+                <div className="linkMe"><a href="http://emilyannemoses.com" target="_blank">Emily Anne Moses</a></div>
+            </div>
         )
     }
 }
