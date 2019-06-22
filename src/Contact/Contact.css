@@ -1,0 +1,20 @@
+.contact {
+    margin: 0 50px 0 200px;
+    height: 90vh;
+    overflow: scroll;
+    bottom: 0;
+    padding-top: 50px;
+}
+
+.contact-header {
+    font-size: 40px;
+    float: right;
+    color: #495867;
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
