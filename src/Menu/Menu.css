@@ -5,6 +5,7 @@
     background: #d8dbe2;
     box-shadow: 2px 2px 15px rgba(73, 88, 103, .3);
     text-align: center;
+    top: 0;
 }
 #greetingContainer {
     width: 90%;
@@ -36,9 +37,9 @@ input {
 .text {
     color: #495867;
 }
-.menu {
+/* .menu {
     display: block;
-}
+} */
 a {
     display: block;
     color: #495867;
