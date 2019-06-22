@@ -3,6 +3,8 @@ import { BrowserRouter as Router,
     NavLink
     } from 'react-router-dom';
 import menu from './Menu.css';
+import Home from '../Home/Home';
+import settings from '../Settings/Settings'
 
 class Menu extends Component {
     constructor(props) {
@@ -25,10 +27,10 @@ class Menu extends Component {
                 </div>
                 <div className="menu" id="menu">
                     <Router>
-                        <NavLink className="item" to="/home" activeStyle={{ menu }}>home</NavLink>
+                        <NavLink className="item" to="/home" activeStyle={{ menu }}><Home/>home</NavLink>
                         <NavLink className="item" to="/settings" activeStyle={{ menu }}>settings</NavLink>
-                        <NavLink className="item" to="/about" activeStyle={{ menu }}>about</NavLink>
-                        <NavLink className="item" to="/contact" activeStyle={{ menu }}>contact</NavLink>
+                        <NavLink className="item" exact to="/about" activeStyle={{ menu }}>about</NavLink>
+                        <NavLink className="item" exact to="/contact" activeStyle={{ menu }}>contact</NavLink>
                     </Router>
                 </div>
             </div>
