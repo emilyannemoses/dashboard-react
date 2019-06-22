@@ -1,13 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400|PT+Mono&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#dashboard-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #d8dbe2;
+}
+h1 {
+  margin: 0;
+  font-size: 1.15em;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+p {
+  color: #577399;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+}
+p a {
+  text-decoration: none;
+  color: #577399;
+}
+/* a {
+  cursor: pointer;
+  padding: 3px;
+}
+a:hover {
+  background: #b7cee8;
+  color: #fff;
+  transition: all 0.3s ease;
+} */
+.main-grid {
+  width: 50vw;
+  margin: 50px 50px 50px 380px;
+  background: #fff;
+  height: 85vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "one four" "one four" "two four" "two four" "three five" "three five" "three five" "three five";
+}
+.icon {
+  width: 55px;
+  height: 55px;
+  background: #b7cee8;
+  border-radius: 50%;
+}
+.icon p {
+  color: #fff;
+  font-size: 1.7em;
+  margin: 0;
+  margin-top: 12px;
+}
+.item {
+  border: 1px solid #d8dbe2;
 }
