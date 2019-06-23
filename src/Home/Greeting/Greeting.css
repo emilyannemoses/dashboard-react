@@ -13,10 +13,9 @@
     font-size: 0.8em;
     margin-top: 15px;
     padding: 5px;
-    border: 1px solid #495867;
     text-transform: uppercase;
 }
-#yourName {
+.name {
     border: 0;
     padding: 0;
     margin: 0;
