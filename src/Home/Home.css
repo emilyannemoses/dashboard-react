@@ -1,0 +1,7 @@
+.main-grid {
+    margin: 0 50px 0 200px;
+    height: 90vh;
+    overflow: scroll;
+    bottom: 0;
+    padding-top: 50px;
+}

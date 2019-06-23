@@ -1,0 +1,24 @@
+.one {
+    grid-area: one;
+    grid-column: 1;
+    background: #b7cee8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d8dbe2;
+}
+.timeGreeting {
+    margin-top: 20px;
+    font-size: 1.15em;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.time {
+    font-size: 38px;
+    font-family: 'PT Mono', monospace;
+    color: #b7cee8;
+    background: #fff;
+    padding: 5px;
+}

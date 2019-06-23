@@ -16,7 +16,12 @@ class Menu extends Component {
         return (
             <div>
                 <div className="leftside-menu menu" id="menu">
-                    <Greeting />
+                    <Greeting
+                        nameVal={this.props.nameVal}
+                        setNameState={this.props.setNameState}
+                        greetingToggle={this.props.greetingToggle}
+                        poopFunc={this.props.poopFunc}
+                    />
                     <NavLink className="item" exact to="/" activeStyle={{ menu }}>home</NavLink>
                     <NavLink className="item" exact to="/settings" activeStyle={{ menu }}>settings</NavLink>
                     <NavLink className="item" exact to="/about" activeStyle={{ menu }}>about</NavLink>
