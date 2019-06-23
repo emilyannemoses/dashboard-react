@@ -1,0 +1,26 @@
+.two {
+    grid-area: two;
+    grid-column: 1;
+    background: #d8dbe2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d8dbe2;
+}
+.homeCity {
+    color: #495867;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+}
+.description {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #577399;
+    font-size: 0.8em;
+}
+.weatherWidget {
+    color: #fff;
+    font-size: 2.3em;
+}

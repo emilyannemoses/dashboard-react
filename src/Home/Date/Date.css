@@ -1,0 +1,20 @@
+.four {
+    grid-area: four;
+    grid-column: 2;
+    border: 1px solid #d8dbe2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.four p {
+    margin-top: 8px;
+}
+#date {
+    color: #b7cee8;
+    font-family: 'PT Mono', monospace;
+    font-size: 1.3em;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
