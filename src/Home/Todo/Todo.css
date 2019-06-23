@@ -1,0 +1,109 @@
+.five {
+    grid-area: five;
+    grid-column: 2;
+    background: #b7cee8;
+    overflow: scroll;
+    border: 1px solid #d8dbe2;
+}
+.things li {
+    padding: 10px 0;
+    display: flex;
+}
+.things label {
+    flex: 1;
+    cursor: pointer;
+}
+.things input {
+    display: none;
+}
+.addItems {
+    text-align: center;
+}
+.addItems input {
+    width: 255px;
+    height: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+input::placeholder {
+    color: #fff;
+}
+input[type='submit'] {
+    box-shadow: 1px 2px 1px 1px darkslategray;
+    cursor: pointer;
+}
+span {
+    cursor: pointer;
+}
+.reminders {
+    display: flex;
+    position: relative;
+}
+.reminders p {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.reminder--btns {
+    position: absolute;
+    right: 18px;
+    top: 17px;
+}
+.reminder--btns i {
+    color: #fff;
+    cursor: pointer;
+}
+.reminder--btns i:hover {
+    color: #577399;
+    transition: all 0.3s ease;
+}
+.reminders--list {
+    margin-top: 10px;
+}
+.todo {
+    cursor: pointer;
+    display: inline-block;
+}
+.todo-switch {
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+.todo-switch:before, .todo-switch:after {
+    content: "";
+    color: #fff;
+}
+.todo-checkbox:checked + .todo-switch {
+    background: #577399;
+}
+.todo-checkbox:checked + .todo-switch:before {
+    content: "\2713";
+    color: #fff;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: -10px;
+    left: 1px;
+}
+.todo-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+.todo-label {
+    font-size: 0.8em;
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    color: #fff;
+    text-transform: none;
+}
+li:hover {
+    background: #b7cee8;
+}
