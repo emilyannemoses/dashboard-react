@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import './Home.css';
-import Weather from './Weather/Weather';
 import Music from './Music/Music';
 import Date from './Date/Date'
 import Todo from './Todo/Todo';
 import Time from './Time/Time';
+import Weather from './Weather/Weather';
 
 class Home extends Component {
-
     render() {
-        let lsName = localStorage.getItem('names').replace(/\"/g, "");
+        let lsName;
+        if (localStorage.names) {
+            lsName = localStorage.getItem('names').replace(/"/g,"");
+        }
         return (
             <div className="main-grid">
                 <div className="block one">
