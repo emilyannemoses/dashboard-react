@@ -1,0 +1,103 @@
+.three {
+    grid-area: three;
+    grid-column: 1;
+    border: 1px solid #d8dbe2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.music {
+    text-align: center;
+    color: #577399;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+.info {
+    height: 5px;
+    background: rgba(255, 255, 255, .85);
+    transform: translateY(35px);
+    transition: all 0.5s ease-in-out;
+}
+.progress-bar {
+    height: 5px;
+    width: 60%;
+    margin: 6% auto;
+    background: #e7e9ed;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+.fill {
+    background-color: #b7cee8;
+    width: 40%;
+    height: 0.3rem;
+    border-radius: 2px;
+}
+.time--current, .time--total {
+    color: #495867;
+    font-size: 10px;
+    position: absolute;
+    margin-top: -4px;
+}
+.time--current {
+    left: 15px;
+}
+.time--total {
+    right: 15px;
+}
+.currently-playing {
+    text-align: center;
+    margin-top: -3px;
+}
+.song-name, .artist-name {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+.song-name {
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    color: #495867;
+}
+.artist-name {
+    font-size: 0.6em;
+    letter-spacing: 1.5px;
+    color: #697e94;
+    margin-top: 5px;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    justify-content: center;
+    color: #b7cee8;
+    cursor: pointer;
+}
+.controls .play {
+    margin: 15px 20px;
+    color: #90b4dc;
+}
+.controls .option {
+    left: 10px;
+    position: absolute;
+    font-size: 0.8em;
+}
+.controls .add {
+    right: 10px;
+    position: absolute;
+    font-size: 0.8em;
+}
+.controls .volume {
+    margin-right: 30px;
+    font-size: 0.8em;
+}
+.controls .shuffle {
+    margin-left: 30px;
+    font-size: 0.8em;
+}
+.play, .next, .previous, .option, .add, .volume, .shuffle {
+    transition: all 0.5s ease;
+}
+.play:hover, .next:hover, .previous:hover, .option:hover, .add:hover, .volume:hover, .shuffle:hover {
+    color: #697e94;
+}
