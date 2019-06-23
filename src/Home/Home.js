@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Home.css';
-import Greeting from './Greeting/Greeting';
 import Weather from './Weather/Weather';
 import Music from './Music/Music';
 import Date from './Date/Date'
@@ -12,10 +11,10 @@ class Home extends Component {
         return (
             <div className="main-grid">
                 <div className="block one">
-                    <Greeting />
+                    <div id="greetingDisplayFirst" className="timeGreeting"></div>
                     {/* <div id="time" className="time"></div>
                     <div id="greeting" className="timeGreeting"></div>
-                    <p id="greetingDisplayFirst"></p> */}
+                    */}
                 </div>
   
                 <div className="block two">

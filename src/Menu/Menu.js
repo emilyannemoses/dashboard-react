@@ -17,6 +17,7 @@ class Menu extends Component {
             <div>
                 <div className="leftside-menu menu" id="menu">
                     <Greeting />
+                    <div id="greetingDisplay" className="greeting" style={{display:'none'}}></div>
                     <NavLink className="item" exact to="/" activeStyle={{ menu }}>home</NavLink>
                     <NavLink className="item" exact to="/settings" activeStyle={{ menu }}>settings</NavLink>
                     <NavLink className="item" exact to="/about" activeStyle={{ menu }}>about</NavLink>
