@@ -1,21 +1,20 @@
 import React, {Component} from 'react';
 import './Home.css';
-import Greeting from './Greeting/Greeting';
 import Weather from './Weather/Weather';
 import Music from './Music/Music';
 import Date from './Date/Date'
 import Todo from './Todo/Todo';
+import Time from './Time/Time';
 
 class Home extends Component {
 
     render() {
+        let lsName = localStorage.getItem('names').replace(/\"/g, "");
         return (
             <div className="main-grid">
                 <div className="block one">
-                    <Greeting />
-                    {/* <div id="time" className="time"></div>
-                    <div id="greeting" className="timeGreeting"></div>
-                    <p id="greetingDisplayFirst"></p> */}
+                    <Time />
+                    <p>{lsName}</p>
                 </div>
   
                 <div className="block two">

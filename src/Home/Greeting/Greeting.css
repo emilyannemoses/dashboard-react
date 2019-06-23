@@ -1,0 +1,28 @@
+#greetingContainer {
+    width: 90%;
+}
+.user {
+    margin-top: 55%;
+    margin-bottom: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.greeting {
+    color: #495867;
+    font-size: 0.8em;
+    margin-top: 15px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.name {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border-bottom: 1px solid #495867;
+    width: 135px;
+}
+.text {
+    color: #495867;
+}
