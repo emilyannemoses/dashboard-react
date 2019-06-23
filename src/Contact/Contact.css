@@ -14,7 +14,158 @@
 
 .contact-form {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    padding-top: 100px;
+}
+
+@media (min-width: 768px) {
+    #contact #navbar {
+        background-color: var(--form-bg-color);
+        border: var(--form-border);
+        color: var(--form-text-color);
+        font-family: var(--font-abril-fatface);
+        cursor: pointer;
+    }
+      
+    form {
+        position: relative;
+        margin: 0px auto;
+        padding: 10px 20px;
+        background: transparent;
+        color: var(--form-text-color);
+        font-family: var(--font-abril-fatface);
+        font-size: 20px;
+        max-width: 480px;
+        z-index: 999;
+    }
+      
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    }
+    
+    .submit {
+        padding: 19px 39px 18px 39px;
+        color: black;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+        font-family: var(--font-abril-fatface);
+        text-align: center;
+        font-style: normal;
+        width: 100%;
+        border: 1px solid black;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+        margin-bottom: 10px;
+    }
+    
+    .reset {
+        padding: 19px 39px 18px 39px;
+        color: black;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        font-family: var(--font-abril-fatface);
+        width: 100%;
+        border: 1px solid black;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    }
+    
+    fieldset {
+        border: none;
+    }
+    
+    .formContainer {
+        background-color: var(--form-bg-color);
+        color: var(--form-text-color);
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 767px) {
+    #contact #navbar {
+        background-color: var(--form-bg-color);
+        border: var(--form-border);
+        color: var(--form-text-color);
+        font-family: var(--font-abril-fatface);
+        cursor: pointer;
+    }
+      
+    form {
+        position: relative;
+        max-width: 300px;
+        margin: 0px auto;
+        padding: 10px 20px;
+        background: transparent;
+        color: var(--form-text-color);
+        font-family: var(--font-abril-fatface);
+        font-size: 20px;
+        z-index: 999;
+    }
+      
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    }
+    
+    .submit {
+        padding: 19px 39px 18px 39px;
+        color: black;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+        font-family: var(--font-abril-fatface);
+        text-align: center;
+        font-style: normal;
+        width: 100%;
+        border: 1px solid black;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+        margin-bottom: 10px;
+    }
+    
+    .reset {
+        padding: 19px 39px 18px 39px;
+        color: black;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        font-family: var(--font-abril-fatface);
+        width: 100%;
+        border: 1px solid black;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    }
+    
+    fieldset {
+        border: none;
+    }
+    
+    .formContainer {
+        background-color: var(--form-bg-color);
+        color: var(--form-text-color);
+    }
 }
