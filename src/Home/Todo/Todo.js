@@ -6,7 +6,7 @@ function Todo() {
         <div>
             <div className="reminders">
                 <p>reminders</p>
-                <div className="reminder--btns" onclick="displayAddItem()">
+                <div className="reminder--btns">
                 <i className="fas fa-ellipsis-h"></i>
                 </div>
             </div>

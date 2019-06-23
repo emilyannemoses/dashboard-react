@@ -1,12 +1,12 @@
 import React from 'react';
 import './Date.css'
+import {Link} from 'react-router-dom';
 
 function Date() {
     return (
         <div>
-            <h1 id="date"></h1>
-            <a id="linkToCalendar" href="" target="_blank"></a>
-            <p><a href="">go to settings to edit calendar</a></p>
+            <h1 id="date">Today's date</h1>
+            <p><Link to="/settings">go to settings to edit calendar</Link></p>
         </div>
     )
 }

@@ -20,7 +20,7 @@ class Menu extends Component {
                         nameVal={this.props.nameVal}
                         setNameState={this.props.setNameState}
                         greetingToggle={this.props.greetingToggle}
-                        poopFunc={this.props.poopFunc}
+                        toggleName={this.props.toggleName}
                     />
                     <NavLink className="item" exact to="/" activeStyle={{ menu }}>home</NavLink>
                     <NavLink className="item" exact to="/settings" activeStyle={{ menu }}>settings</NavLink>

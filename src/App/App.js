@@ -11,8 +11,15 @@ class App extends Component {
       greetingToggle: false
     };
   }
-  poopFunc = (event) => {
-    if (event.charCode === 13) {
+  componentDidMount(){
+    if (localStorage.names) {
+      this.setState({
+        greetingToggle: true
+      })
+    }
+  }
+  toggleName = (event) => {
+    if (event.charCode === 13 && this.state.nameVal.length > 0) {
       this.setState({
         greetingToggle: true
       });
@@ -38,7 +45,7 @@ class App extends Component {
             nameVal={this.state.nameVal}
             setNameState={this.setNameState}
             greetingToggle={this.state.greetingToggle}
-            poopFunc={this.poopFunc}
+            toggleName={this.toggleName}
           />
         </Router>
         {/* main area will import:
