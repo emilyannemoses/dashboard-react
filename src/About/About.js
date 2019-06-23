@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './About.css';
 import {Link} from 'react-router-dom';
-import Contact from '../Contact/Contact'
 
 class About extends Component {
 
@@ -9,7 +8,7 @@ class About extends Component {
         return (
             <div className="about">
                 <div className="headline">About the developer:
-                    <a className="linkMe" href="http://emilyannemoses.com" target="_blank">Emily Anne Moses</a>
+                    <a className="linkMe" href="http://emilyannemoses.com" rel="noopener noreferrer" target="_blank">Emily Anne Moses</a>
                 </div>
                 <div>
                     <p>
@@ -19,12 +18,12 @@ class About extends Component {
                     </p>
                     <p>
                         All frameworks are more or less the same, but in picking up where I left off with React I'm impressed by how far it has come!
-                        I decided to use React Router 4 for this project, and I'm really happy with the performance. I'm also a <i>widget dashboard enthusiast</i> and I've <a href="https://eamoses.github.io/widget-dashboard/" target="_blank">made one before based on the Momentum Dash design.</a>
+                        I decided to use React Router 4 for this project, and I'm really happy with the performance. I'm also a <i>widget dashboard enthusiast</i> and I've <a href="https://eamoses.github.io/widget-dashboard/" rel="noopener noreferrer" target="_blank">made one before based on the Momentum Dash design.</a>
                     </p>
                 </div>
                 <div>
                     <p>
-                        I am not a designer.  Fortunately, people with beautiful design chops exist, and for this project I borrowed Julie Park's <a href="https://codepen.io/juliepark/pen/KLWmxO" target="_blank">CodePen</a> and build functionality into it!
+                        I am not a designer.  Fortunately, people with beautiful design chops exist, and for this project I borrowed Julie Park's <a href="https://codepen.io/juliepark/pen/KLWmxO" rel="noopener noreferrer" target="_blank">CodePen</a> and build functionality into it!
                     </p>
                 </div>
                 <div>
@@ -40,7 +39,7 @@ class About extends Component {
                 </div>
                 <div>
                     <p>
-                        If you'd like to get in touch, please don't hesitate to <Link to="/contact" component={Contact}>Contact me!</Link> I'm always excited to meet other enthusiasts!
+                        If you'd like to get in touch, please don't hesitate to <Link to="/contact">Contact me!</Link> I'm always excited to meet other enthusiasts!
                     </p>
                 </div>
             </div>

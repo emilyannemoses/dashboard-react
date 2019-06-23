@@ -1,0 +1,150 @@
+.contact {
+    margin: 0 50px 0 200px;
+    height: 90vh;
+    overflow: scroll;
+    bottom: 0;
+    padding-top: 50px;
+}
+
+.contact-header {
+    font-size: 40px;
+    float: right;
+    color: #495867;
+}
+
+.contact-form {
+    text-align: center;
+    padding-top: 100px;
+}
+
+@media (min-width: 768px) {
+    form {
+        position: relative;
+        max-width: 300px;
+        margin: 0px auto;
+        padding: 10px 20px;
+        background: transparent;
+        color: #495867;
+        font-size: 20px;
+        z-index: 999;
+        max-width: 480px;
+    }
+      
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 1px 1px 1px #495867 inset;
+    }
+    
+    .submit {
+        padding: 19px 39px 18px 39px;
+        color: white;
+        cursor: pointer;
+        background-color: #495867;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        width: 300px;
+        border: 1px solid #495867;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 #495867 inset;
+        margin-bottom: 10px;
+    }
+    
+    .reset {
+        padding: 19px 39px 18px 39px;
+        color: #495867;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        width: 300px;
+        border: 1px solid #495867;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 #495867 inset;
+    }
+    
+    fieldset {
+        border: none;
+    }
+    
+    .formContainer {
+        background-color: #d8dbe2;
+        color: #495867;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 767px) {
+    form {
+        position: relative;
+        margin: 0px auto;
+        padding: 10px 20px;
+        background: transparent;
+        color: #495867;
+        font-size: 20px;
+        z-index: 999;
+        max-width: 480px;
+    }
+   
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 1px 1px 1px #495867 inset;
+    }
+
+    .submit {
+        padding: 19px 39px 18px 39px;
+        color: white;
+        cursor: pointer;
+        background-color: #495867;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        width: 200px;
+        border: 1px solid #495867;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 #495867 inset;
+        margin-bottom: 10px;
+    }
+  
+    .reset {
+        padding: 19px 39px 18px 39px;
+        color: #495867;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        width: 200px;
+        border: 1px solid #495867;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 #495867 inset;
+    }
+
+    fieldset {
+        border: none;
+    }
+    
+    .formContainer {
+        background-color: #d8dbe2;
+        color: #495867;
+    }
+}
