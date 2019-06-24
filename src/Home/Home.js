@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Home.css';
 import Music from './Music/Music';
-import Date from './Date/Date'
+import TodaysDate from './TodaysDate/TodaysDate'
 import Todo from './Todo/Todo';
 import Time from './Time/Time';
 import Weather from './Weather/Weather';
@@ -28,7 +28,7 @@ class Home extends Component {
                 </div>
   
                 <div className="block four">
-                    <Date />
+                    <TodaysDate />
                 </div>
   
                 <div className="block five">
