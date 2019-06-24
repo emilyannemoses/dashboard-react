@@ -20,7 +20,7 @@
     text-align: center;
 }
 .addItems input {
-    width: 255px;
+    width: 200px;
     height: 40px;
     font-weight: 300;
     text-align: center;
@@ -106,4 +106,7 @@ span {
 }
 li:hover {
     background: #b7cee8;
+}
+.hidden {
+    display: none;
 }
