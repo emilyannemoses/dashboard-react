@@ -83,18 +83,18 @@ class Todo extends Component {
                     )
                 }
                 <div className={this.state.isHidden ? 'hidden' : null}>
-                    <form id="formToAddItemsID" className="addItems">
+                    <div className="addItems">
                         <input
                             name="item"
                             placeholder="What do you need to do"
                             value={this.state.input} 
                             onChange={this.handleInput} 
-                            onKeyDown={this.handleInput}  
+                            onKeyUp={this.handleInput}
                             ref={(input) => { this.todoInput = input; }}
                         />
                         <br></br>
                         <button onClick={this.addTodo}>Add Item</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         )
