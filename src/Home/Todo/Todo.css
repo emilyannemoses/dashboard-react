@@ -6,8 +6,7 @@
     border: 1px solid #d8dbe2;
 }
 .things li {
-    padding: 10px 0;
-    display: flex;
+    display: inline-block;
 }
 .things label {
     flex: 1;
@@ -29,7 +28,13 @@
 input::placeholder {
     color: #fff;
 }
-input[type='submit'] {
+button {
+    background-color: #b7cee8;
+    width: 200px;
+    height: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
     box-shadow: 1px 2px 1px 1px darkslategray;
     cursor: pointer;
 }
@@ -56,9 +61,6 @@ span {
 .reminder--btns i:hover {
     color: #577399;
     transition: all 0.3s ease;
-}
-.reminders--list {
-    margin-top: 10px;
 }
 .todo {
     cursor: pointer;
@@ -101,7 +103,7 @@ span {
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    color: #fff;
+    color: #495867;
     text-transform: none;
 }
 li:hover {
@@ -109,4 +111,9 @@ li:hover {
 }
 .hidden {
     display: none;
+}
+.inline {
+    /* height: 100%; */
+    width: 49%;
+    display: inline-block;
 }

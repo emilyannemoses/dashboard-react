@@ -36,15 +36,15 @@ p a {
   color: #577399;
 }
 .main-grid {
-  width: 70vw;
-  margin: 0px 0px 0px 300px;
+  width: 60vw;
+  margin: 0px 0px 20px 270px;
   padding-top: 20px;
   background: #fff;
   height: 95vh;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "one four" "one four" "two five" "three five" "three five" "three five" "three five" "three five";
+  grid-template-areas: "one four" "one four" "two four" "three five" "three five" "three five" "three five" "three five";
 }
 .icon {
   width: 55px;
