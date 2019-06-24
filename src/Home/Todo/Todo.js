@@ -19,19 +19,25 @@ class Todo extends Component {
         })
     }
     addTodo = () => {
-        const newTodo = {
-          value: this.state.input,
-          id: this.guid()
-        };
-        this.setState(state => ({
-          todos: [ ...state.todos, newTodo],
-          input: ''
-        }));
+        if (this.state.input.length > 0) {
+            const newTodo = {
+                value: this.state.input,
+                id: this.guid()
+            };
+            this.setState(state => ({
+                todos: [ ...state.todos, newTodo],
+                input: ''
+            }));
+        }
     }
     handleInput = (evt) => {
-        this.setState({
-            input: evt.target.value
-        });
+        if (evt.keyCode === 13) {
+            this.addTodo();
+        } else {
+            this.setState({
+                input: evt.target.value
+            });
+        }
     }
     removeTodo = (id) => {
         this.setState(state => {
