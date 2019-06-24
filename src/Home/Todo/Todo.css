@@ -70,7 +70,6 @@ span {
     display: inline-block;
     background: #fff;
     border-radius: 50%;
-    margin-left: 20px;
     width: 12px;
     height: 12px;
     position: relative;
@@ -99,9 +98,8 @@ span {
 }
 .todo-label {
     font-size: 0.8em;
-    margin-left: 8px;
+    margin-left: 5px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     position: relative;
     color: #495867;
     text-transform: none;
@@ -113,7 +111,6 @@ li:hover {
     display: none;
 }
 .inline {
-    /* height: 100%; */
     width: 49%;
     display: inline-block;
 }
