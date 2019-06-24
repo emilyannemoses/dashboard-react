@@ -32,7 +32,11 @@ class Home extends Component {
                 </div>
   
                 <div className="block five">
-                    <Todo />
+                    <Todo 
+                    handleItemSubmit={this.handleItemSubmit}
+                    handleItemChange={this.handleItemChange}
+                    itemVal={this.props.itemVal}
+                    />
                 </div>
             </div>
         )
