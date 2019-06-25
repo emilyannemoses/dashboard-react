@@ -23,7 +23,7 @@
         max-width: 300px;
         margin: 0px auto;
         padding: 10px 20px;
-        background: transparent;
+        border: 1px solid #b7cee8;
         color: #495867;
         font-size: 20px;
         z-index: 999;
@@ -40,12 +40,12 @@
         margin: 0;
         outline: 0;
         padding: 15px;
-        width: 100%;
-        box-shadow: 1px 1px 1px #495867 inset;
+        width: 90%;
+        box-shadow: 0px 0px 1px 1px #495867 inset;
     }
     
     .submit {
-        padding: 19px 39px 18px 39px;
+        padding: 5px 39px 18px 39px;
         color: white;
         cursor: pointer;
         background-color: #495867;
@@ -60,7 +60,7 @@
     }
     
     .reset {
-        padding: 19px 39px 18px 39px;
+        padding: 5px 39px 18px 39px;
         color: #495867;
         cursor: pointer;
         background-color: transparent;
@@ -105,12 +105,12 @@
         margin: 0;
         outline: 0;
         padding: 15px;
-        width: 100%;
-        box-shadow: 1px 1px 1px #495867 inset;
+        width: 90%;
+        box-shadow: 0px 0px 1px 1px #495867 inset;
     }
 
     .submit {
-        padding: 19px 39px 18px 39px;
+        padding: 5px 39px 18px 39px;
         color: white;
         cursor: pointer;
         background-color: #495867;
@@ -125,7 +125,7 @@
     }
   
     .reset {
-        padding: 19px 39px 18px 39px;
+        padding: 5px 39px 18px 39px;
         color: #495867;
         cursor: pointer;
         background-color: transparent;
