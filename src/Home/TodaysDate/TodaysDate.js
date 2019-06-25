@@ -16,15 +16,15 @@ class TodaysDate extends Component {
     }
     render() {
         const {month, numberDay, year, months, dayOfWeek} = this.getDate();
-        const calendarHref = this.props.calendarHref;
+        const calendar = localStorage.getItem('calendar').replace(/"/g,"");
         return (
             <div className="todays-date">
                 <h1 id="date">{dayOfWeek}</h1>
                 <h1 id="date">{months[month]} {numberDay},  {year}</h1>
                 <br></br>
                 {
-                    calendarHref ? (
-                        <a href={calendarHref} target="_blank" rel="noopener noreferrer">Go to your calendar</a>
+                    calendar ? (
+                        <a href={calendar} target="_blank" rel="noopener noreferrer">Go to your calendar</a>
                     ) : (
                         <div></div>
                     )

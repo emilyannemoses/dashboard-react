@@ -39,10 +39,13 @@ class App extends Component {
   }
   addHref = (event) => {
     // https://calendar.google.com/calendar/r/day
-    console.log(event.target.value)
     this.setState({
         calendarHref: event.target.value
     })
+    const calendarHref = event.target.value;
+    let parsingCalLS = JSON.parse(localStorage.getItem('calendar'));
+    parsingCalLS = calendarHref;
+    localStorage.setItem('calendar', JSON.stringify(parsingCalLS))
   }
   render() {
     return (
