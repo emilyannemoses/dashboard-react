@@ -4,7 +4,7 @@ import Music from './Music/Music';
 import TodaysDate from './TodaysDate/TodaysDate'
 import Todo from './Todo/Todo';
 import Time from './Time/Time';
-// import Weather from './Weather/Weather';
+import Weather from './Weather/Weather';
 
 class Home extends Component {
     render() {
@@ -20,7 +20,7 @@ class Home extends Component {
                 </div>
   
                 <div className="block two">
-                    {/* <Weather /> */}
+                    <Weather />
                 </div>
   
                 <div className="block three">
