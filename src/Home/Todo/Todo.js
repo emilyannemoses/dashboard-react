@@ -109,7 +109,7 @@ class Todo extends Component {
 
 const DisplayItem = ({value, onClick, deleted}) => (
     <div className="reminders--list inline">
-        <ul id="listOfItemsID" className="things">
+        <ul className="things">
             <li>
                 <label className="todo">
                     <span className={`todo ${deleted ? 'deleted' : ''}`}>
