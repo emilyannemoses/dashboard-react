@@ -8,7 +8,8 @@ class App extends Component {
     super(props);
     this.state = {
       nameVal: '',
-      greetingToggle: false
+      greetingToggle: false,
+      calendarHref: ''
     };
   }
   componentDidMount(){
@@ -36,12 +37,20 @@ class App extends Component {
     });
     this.saveToLS(char.target.value)
   }
-
+  addHref = (event) => {
+    // https://calendar.google.com/calendar/r/day
+    console.log(event.target.value)
+    this.setState({
+        calendarHref: event.target.value
+    })
+  }
   render() {
     return (
       <div id="dashboard-container" className="container">
         <Router>
           <Menu
+            addHref={this.addHref}
+            calendarHref={this.state.calendarHref}
             nameVal={this.state.nameVal}
             setNameState={this.setNameState}
             greetingToggle={this.state.greetingToggle}

@@ -1,4 +1,4 @@
-.two {
+.settings-grid .two {
     grid-area: two;
     grid-column: 1;
     background: #d8dbe2;
@@ -9,7 +9,7 @@
     border: 1px solid #d8dbe2;
     text-align: center;
 }
-.three {
+.settings-grid .three {
     grid-area: three;
     grid-column: 1;
     border: 1px solid #d8dbe2;
@@ -38,4 +38,11 @@
 }
 .name-change {
     font-size: 18px;
+}
+.todays-date a {
+    padding: 3px 0 3px 0;
+}
+.cal-link {
+    width: 300px;
+    color: firebrick;
 }

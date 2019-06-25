@@ -28,7 +28,10 @@ class Home extends Component {
                 </div>
   
                 <div className="block four">
-                    <TodaysDate />
+                    <TodaysDate 
+                        calendarHref={this.props.calendarHref}
+                        addHref={this.props.addHref}
+                    />
                 </div>
   
                 <div className="block five">

@@ -23,7 +23,12 @@ class Settings extends Component {
                 </div>
 
                 <div className="block two">
-                    block two
+                    <div className="name-heading">Add a link to your calendar</div>
+                    <br></br>
+                    <input className="cal-link"
+                        value={this.props.calendarHref}
+                        onChange={x => this.props.addHref(x)}
+                    />
                 </div>
 
                 <div className="block three">
