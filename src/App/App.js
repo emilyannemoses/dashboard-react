@@ -57,18 +57,6 @@ class App extends Component {
             toggleName={this.toggleName}
           />
         </Router>
-        {/* main area will import:
-        time/name, 
-        weather,
-        spotify component,
-        date/calendar
-        todo list
-        
-        And will toggle between:
-        Home
-        Settings
-        About
-        Contact*/}
       </div>
     )
   }
