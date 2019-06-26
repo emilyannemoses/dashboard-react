@@ -1,14 +1,26 @@
 # Dashboard in React
 
-## Menu Component
+## Components
 
-    * Home
+* Home
 
-        * Home link will have the dashboard containing six components
+    * Home link will display the dashboard containing six components
+            
+        * Greetings Component
+
+        * Time Component
+
+        * Weather Component
+
+        * Music Component
+
+        * Date / Calendar Component
+
+        * Todo List Component
 
     * Settings
 
-        * Settings Component will have settings
+        * Settings Component will have settings for Spotify, Calendar and user name display
 
     * About
 
@@ -17,17 +29,3 @@
     * Contact
         
         * Contact Component will contain a contact form
-
-## Main Components
-
-### Greetings Component
-
-### Time Component
-
-### Weather Component
-
-### Music Component
-
-### Date / Calendar Component
-
-### Todo List Component
