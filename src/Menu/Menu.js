@@ -27,8 +27,18 @@ class Menu extends Component {
                     <NavLink className="item" exact to="/contact" activeStyle={{ menu }}>contact</NavLink>
                 </div>
                 <div className="content">
-                    <Route exact path="/" render={(props) => <Home {...props} calendarHref={this.props.calendarHref} addHref={this.props.addHref}/>} />
-                    <Route exact path="/settings" render={(props) => <Settings {...props} calendarHref={this.props.calendarHref} addHref={this.props.addHref}/>} />
+                    <Route exact path="/" render={(props) => 
+                        <Home {...props} 
+                            calendarHref={this.props.calendarHref}
+                            addHref={this.props.addHref}
+                        />}
+                    />
+                    <Route exact path="/settings" render={(props) => 
+                        <Settings {...props}
+                            calendarHref={this.props.calendarHref}
+                            addHref={this.props.addHref}
+                        />}
+                    />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/contact" component={Contact} />
                 </div>

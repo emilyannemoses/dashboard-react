@@ -16,17 +16,15 @@ class TodaysDate extends Component {
     }
     render() {
         const {month, numberDay, year, months, dayOfWeek} = this.getDate();
-        const calendar = localStorage.getItem('calendar').replace(/"/g,"");
         return (
             <div className="todays-date">
                 <h1 id="date">{dayOfWeek}</h1>
                 <h1 id="date">{months[month]} {numberDay},  {year}</h1>
                 <br></br>
-                {
-                    calendar ? (
-                        <a href={calendar} target="_blank" rel="noopener noreferrer">Go to your calendar</a>
+                { !localStorage.getItem('calendar') ? (
+                         <div></div>
                     ) : (
-                        <div></div>
+                        <a href={localStorage.getItem('calendar').replace(/"/g,"")} target="_blank" rel="noopener noreferrer">Go to your calendar</a>
                     )
                 }
                 <p><Link to="/settings">go to settings to edit calendar</Link></p>

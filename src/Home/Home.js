@@ -20,11 +20,11 @@ class Home extends Component {
                 </div>
   
                 <div className="block two">
-                    <Weather />
+                    <Music />
                 </div>
   
                 <div className="block three">
-                    <Music />
+                    <Weather />
                 </div>
   
                 <div className="block four">
