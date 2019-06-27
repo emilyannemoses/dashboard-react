@@ -80,13 +80,16 @@ class Todo extends Component {
                         <i className="fas fa-ellipsis-h"></i>
                     </div>
                 </div>
-                { 
+                { this.state.todos.length > 1 ? (
                     this.state.todos.map(t => 
-                    <DisplayItem 
-                        key={t.id} {...t}
-                        onClick={()=>this.removeTodo(t.id)}
-                    />
+                        <DisplayItem 
+                            key={t.id} {...t}
+                            onClick={()=>this.removeTodo(t.id)}
+                        />
                     )
+                ) : (
+                    <div></div>
+                )
                 }
                 <div className={this.state.isHidden ? 'hidden' : null}>
                     <div className="addItems">
