@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Menu from '../Menu/Menu';
 import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
+import Home from '../Home/Home'
 
 class App extends Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class App extends Component {
             greetingToggle={this.state.greetingToggle}
             toggleName={this.toggleName}
           />
+          <Home />
         </Router>
       </div>
     )
