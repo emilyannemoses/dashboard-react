@@ -28,12 +28,11 @@ class About extends Component {
                 </div>
                 <div>
                     <p>
-                        The widget dashboard first saves the user's name to the user's local storage. This can be deleted and reset in the Settings component. 
-                        The widget uses a weather API through the browser to find the users location and current weather. It also displays the current time and date.
-                        The user has the option to link a Google Calendar if they wish. 
+                        The widget dashboard first saves your name to your local storage. This can be deleted and reset in the Settings component. 
+                        The widget uses a weather API through the browser to find the your location and current weather as long as you approve these settings. It also displays the current time and date.
+                        You have the option to link a personal online Calendar if you wish. The To-do list saves the items to local storage, and these items are deleted when checked off.
                     </p>
                     <p>
-                        The To-do list saves the items to local storage, and these items are deleted when checked off.
                         Implementation of the Spotify API was the most complex. I hadn't worked with this API since 2016 and it has changed drastically!  
                         Follow the directions in the Settings. You must first get a <a href="https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#" target="_blank" rel="noopener noreferrer">Web Playback SDK Access Token</a> by logging in to your Spotify account on their website.
                         My dashboard will then automatically load and play your most current playlist.
