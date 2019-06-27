@@ -54,11 +54,18 @@ class Weather extends Component {
     }
     render() {
         const {temp, description, homeCity} = this.state;
+        console.log(navigator.geolocation)
         return (
             <div>
-                <div id="weatherWidget" className="weatherWidget">{temp}°</div>
-                <div id="description" className="description">{description}</div>
-                <div id="homeCity" className="homeCity">{homeCity}</div>
+                { navigator.geolocation ? (
+                    <div>
+                        <div id="weatherWidget" className="weatherWidget">{temp}°</div>
+                        <div id="description" className="description">{description}</div>
+                        <div id="homeCity" className="homeCity">{homeCity}</div>
+                    </div>
+                ) : (
+                    <div className="weatherLocation">Make sure your browser's location is turned on to recieve current weather.</div>
+                )}
             </div>
         )
     }
