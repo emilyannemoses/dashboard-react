@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {
     NavLink,
-    Route
+    Route,
+    Switch
 } from 'react-router-dom';
 import menu from './Menu.css';
 import Home from '../Home/Home'
@@ -21,26 +22,28 @@ class Menu extends Component {
                         greetingToggle={this.props.greetingToggle}
                         toggleName={this.props.toggleName}
                     />
-                    <NavLink className="item" exact to="/home" activeStyle={{ menu }}>home</NavLink>
+                    <NavLink className="item" exact to="/" activeStyle={{ menu }}>home</NavLink>
                     <NavLink className="item" exact to="/settings" activeStyle={{ menu }}>settings</NavLink>
                     <NavLink className="item" exact to="/about" activeStyle={{ menu }}>about</NavLink>
                     <NavLink className="item" exact to="/contact" activeStyle={{ menu }}>contact</NavLink>
                 </div>
-                <div className="content">
-                    <Route exact path="/home" render={(props) => 
-                        <Home {...props} 
-                            calendarHref={this.props.calendarHref}
-                            addHref={this.props.addHref}
-                        />}
-                    />
-                    <Route exact path="/settings" render={(props) => 
-                        <Settings {...props}
-                            calendarHref={this.props.calendarHref}
-                            addHref={this.props.addHref}
-                        />}
-                    />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/contact" component={Contact} />
+                <div>
+                    <Switch>
+                        <Route exact path="/" render={(props) => 
+                            <Home {...props}
+                                calendarHref={this.props.calendarHref}
+                                addHref={this.props.addHref}
+                            />}
+                        />
+                        <Route exact path="/settings" render={(props) => 
+                            <Settings {...props}
+                                calendarHref={this.props.calendarHref}
+                                addHref={this.props.addHref}
+                            />}
+                        />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/contact" component={Contact} />
+                    </Switch>
                 </div>
             </div>
         );

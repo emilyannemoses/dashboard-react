@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import Menu from '../Menu/Menu';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
+import Menu from '../Menu/Menu';
 import Home from '../Home/Home'
+import Settings from '../Settings/Settings'
+import Contact from '../Contact/Contact'
+import About from '../About/About'
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +16,7 @@ class App extends Component {
       calendarHref: ''
     }
   }
-  componentDidMount(){    
+  componentDidMount(){
     if (localStorage.names) {
       this.setState({
         greetingToggle: true
@@ -51,16 +54,40 @@ class App extends Component {
   render() {
     return (
       <div id="dashboard-container" className="container">
-        <Router>
-          <Menu
-            addHref={this.addHref}
-            calendarHref={this.state.calendarHref}
-            nameVal={this.state.nameVal}
-            setNameState={this.setNameState}
-            greetingToggle={this.state.greetingToggle}
-            toggleName={this.toggleName}
-          />
-        </Router>
+        <BrowserRouter>
+        <Menu
+          addHref={this.addHref}
+          calendarHref={this.state.calendarHref}
+          nameVal={this.state.nameVal}
+          setNameState={this.setNameState}
+          greetingToggle={this.state.greetingToggle}
+          toggleName={this.toggleName}
+        />
+          <Switch>
+            <Route exact path="/dashboard-react"
+              render={route => <Home {...route} 
+              addHref={this.addHref}
+              calendarHref={this.state.calendarHref}
+              nameVal={this.state.nameVal}
+              setNameState={this.setNameState}
+              greetingToggle={this.state.greetingToggle}
+              toggleName={this.toggleName}
+              />}
+            />
+            <Route exact path="/settings"
+              render={route => <Settings {...route} 
+              calendarHref={this.props.calendarHref}
+              addHref={this.props.addHref}
+            />}
+            />
+            <Route exact path="/about"
+              render={route => <About {...route} />}
+            />
+            <Route exact path="/contact"
+              render={route => <Contact {...route} />}
+            />
+          </Switch>
+        </BrowserRouter>
       </div>
     )
   }
