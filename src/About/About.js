@@ -33,8 +33,10 @@ class About extends Component {
                         The user has the option to link a Google Calendar if they wish. 
                     </p>
                     <p>
-                        The To-do list saves the items to local storage, and these items can be checked off or deleted.
-                        Implementation of the Spotify API was the most complex. I hadn't worked with this API since 2016 and it has changed drastically!  To log in, go to the Settings tab and log in with your Spotify login credentials. It will then load and play your most current playlist.
+                        The To-do list saves the items to local storage, and these items are deleted when checked off.
+                        Implementation of the Spotify API was the most complex. I hadn't worked with this API since 2016 and it has changed drastically!  
+                        Follow the directions in the Settings. You must first get a <a href="https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#" target="_blank" rel="noopener noreferrer">Web Playback SDK Access Token</a> by logging in to your Spotify account on their website.
+                        My dashboard will then automatically load and play your most current playlist.
                     </p>
                 </div>
                 <div>
