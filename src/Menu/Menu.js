@@ -21,13 +21,13 @@ class Menu extends Component {
                         greetingToggle={this.props.greetingToggle}
                         toggleName={this.props.toggleName}
                     />
-                    <NavLink className="item" exact to="/" activeStyle={{ menu }}>home</NavLink>
+                    <NavLink className="item" exact to="/home" activeStyle={{ menu }}>home</NavLink>
                     <NavLink className="item" exact to="/settings" activeStyle={{ menu }}>settings</NavLink>
                     <NavLink className="item" exact to="/about" activeStyle={{ menu }}>about</NavLink>
                     <NavLink className="item" exact to="/contact" activeStyle={{ menu }}>contact</NavLink>
                 </div>
                 <div className="content">
-                    <Route exact path="/" render={(props) => 
+                    <Route exact path="/home" render={(props) => 
                         <Home {...props} 
                             calendarHref={this.props.calendarHref}
                             addHref={this.props.addHref}

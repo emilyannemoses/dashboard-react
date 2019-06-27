@@ -60,7 +60,6 @@ class App extends Component {
             greetingToggle={this.state.greetingToggle}
             toggleName={this.toggleName}
           />
-          <Home />
         </Router>
       </div>
     )
