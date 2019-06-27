@@ -10,9 +10,9 @@ class App extends Component {
       nameVal: '',
       greetingToggle: false,
       calendarHref: ''
-    };
+    }
   }
-  componentDidMount(){
+  componentDidMount(){    
     if (localStorage.names) {
       this.setState({
         greetingToggle: true

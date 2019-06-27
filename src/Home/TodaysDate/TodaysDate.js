@@ -16,7 +16,6 @@ class TodaysDate extends Component {
     }
     render() {
         const {month, numberDay, year, months, dayOfWeek} = this.getDate();
-        let calendar;
         return (
             <div className="todays-date">
                 <h1 id="date">{dayOfWeek}</h1>
