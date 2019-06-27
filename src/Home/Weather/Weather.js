@@ -56,7 +56,7 @@ class Weather extends Component {
         const {temp, description, homeCity} = this.state;
         return (
             <div>
-                { navigator.geolocation ? (
+                { navigator.geolocation && temp ? (
                     <div>
                         <div id="weatherWidget" className="weatherWidget">{temp}°</div>
                         <div id="description" className="description">{description}</div>
