@@ -6,9 +6,6 @@ import {
 } from 'react-router-dom';
 import menu from './Menu.css';
 import Home from '../Home/Home'
-import Settings from '../Settings/Settings'
-import About from '../About/About'
-import Contact from '../Contact/Contact'
 import Greeting from '../Home/Greeting/Greeting'
 
 class Menu extends Component {
@@ -35,14 +32,6 @@ class Menu extends Component {
                                 addHref={this.props.addHref}
                             />}
                         />
-                        <Route exact path="/settings" render={(props) => 
-                            <Settings {...props}
-                                calendarHref={this.props.calendarHref}
-                                addHref={this.props.addHref}
-                            />}
-                        />
-                        <Route exact path="/about" component={About} />
-                        <Route exact path="/contact" component={Contact} />
                     </Switch>
                 </div>
             </div>

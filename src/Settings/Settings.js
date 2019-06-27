@@ -12,6 +12,7 @@ class Settings extends Component {
       }
     reset() {
         localStorage.removeItem("names");
+        window.location.href="https://eamoses.github.io/dashboard-react";
     }
     render() {
         console.log("Settings: ",Spotify)
