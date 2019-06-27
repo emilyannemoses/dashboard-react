@@ -20,7 +20,6 @@
     text-align: center;
 }
 .settings-grid .three {
-    grid-area: three;
     grid-column: 1;
     border: 1px solid #d8dbe2;
     display: flex;
