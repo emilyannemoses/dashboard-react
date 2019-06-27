@@ -111,6 +111,9 @@ li:hover {
     display: none;
 }
 .inline {
-    width: 49%;
     display: inline-block;
+}
+.space {
+    display: inline;
+    border: 1px sold blue;
 }

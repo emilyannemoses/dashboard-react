@@ -54,7 +54,7 @@ class Settings extends Component {
                             <button onClick={() => this.state.spotify.handleLogin(this.state.token)}>Go</button>
                         </div>
                     ) : (
-                        <div></div>
+                        <div>You are currently logged in to Spotify. Refresh the browser if you need to enter a new Web Token.</div>
                     )}
                 </div>
             </div>
