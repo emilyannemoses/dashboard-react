@@ -80,17 +80,12 @@ class Todo extends Component {
                         <i className="fas fa-ellipsis-h"></i>
                     </div>
                 </div>
-                { this.state.todos.length > 1 ? (
-                    this.state.todos.map(t => 
-                        <DisplayItem 
-                            key={t.id} {...t}
-                            onClick={()=>this.removeTodo(t.id)}
-                        />
-                    )
-                ) : (
-                    <div></div>
-                )
-                }
+                        { this.state.todos.map(t => 
+                            <DisplayItem 
+                                key={t.id} {...t}
+                                onClick={()=>this.removeTodo(t.id)}
+                            />
+                        )}
                 <div className={this.state.isHidden ? 'hidden' : null}>
                     <div className="addItems">
                         <input
@@ -115,13 +110,17 @@ const DisplayItem = ({value, onClick, deleted}) => (
         <ul className="things">
             <li>
                 <label className="todo">
-                    <span className={`todo ${deleted ? 'deleted' : ''}`}>
-                    <input className="todo-checkbox" type="checkbox" onClick={onClick} />
-                    <span className="todo-switch"></span>
-                        <label className="todo-label">
-                            {value}
-                        </label>
-                    </span>
+                    { value ? (
+                        <span className={`todo ${deleted ? 'deleted' : ''}`}>
+                        <input className="todo-checkbox" type="checkbox" onClick={onClick} />
+                        <span className="todo-switch"></span>
+                            <label className="todo-label">
+                                {value}
+                            </label>
+                        </span>
+                    ) : (
+                        <div></div>
+                    )}
                 </label>
             </li>
         </ul>
