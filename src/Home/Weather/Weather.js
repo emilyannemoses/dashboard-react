@@ -54,7 +54,6 @@ class Weather extends Component {
     }
     render() {
         const {temp, description, homeCity} = this.state;
-        console.log(navigator.geolocation)
         return (
             <div>
                 { navigator.geolocation ? (
