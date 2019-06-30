@@ -118,3 +118,8 @@ li:hover {
     display: inline;
     border: 1px sold blue;
 }
+@media(max-width: 850px) {
+    .five {
+        padding-bottom: 10px;
+    }
+}

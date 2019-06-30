@@ -28,3 +28,14 @@
 .weatherLocation {
     color: #495867;
 }
+@media(max-width: 850px) {
+    .three {
+        grid-area: three;
+        height: 100px;
+        grid-column: 1;
+        border: 1px solid #d8dbe2;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -101,3 +101,14 @@
 .play:hover, .next:hover, .previous:hover, .option:hover, .add:hover, .volume:hover, .shuffle:hover {
     color: #697e94;
 }
+@media(max-width: 850px) {
+    .two {
+        grid-area: two;
+        height: 250px;
+        grid-column: 1;
+        border: 1px solid #d8dbe2;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
