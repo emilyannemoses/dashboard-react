@@ -12,13 +12,11 @@ class About extends Component {
                 </div>
                 <div>
                     <p>
-                        I've been a professional software developer for four years and counting. I've worked on enterprise software in Python, Go and JavaScript.  
-                        I was first introduced to React in 2016, and proceeded to use it to create a form component on an already functioning web application. 
-                        Since then I've worked with AngularJS, RiotJS, VueJS and LoneJS.  
+                        Greetings, I'm Emily. I've been a professional software developer for four years and counting & I've worked on enterprise software in Python, Go and JavaScript.
+                        I was first introduced to React in 2016, and since then I've worked with AngularJS, RiotJS, VueJS and LoneJS.
                     </p>
                     <p>
-                        All frameworks are more or less the same, but in picking up where I left off with React I'm impressed by how far it has come!
-                        I decided to use React Router 4 for this project, and I'm really happy with the performance. I'm also a <i>widget dashboard enthusiast</i> and I've <a href="https://eamoses.github.io/widget-dashboard/" rel="noopener noreferrer" target="_blank">made one before based on the Momentum Dash design.</a>
+                        I'm also a <i>widget dashboard enthusiast</i> and I've <a href="https://eamoses.github.io/widget-dashboard/" rel="noopener noreferrer" target="_blank">made one before based on the Momentum Dash design.</a>
                     </p>
                 </div>
                 <div>
@@ -33,9 +31,7 @@ class About extends Component {
                         You have the option to link a personal online Calendar if you wish. The To-do list saves the items to local storage, and these items are deleted when checked off.
                     </p>
                     <p>
-                        Implementation of the Spotify API was the most complex. I hadn't worked with this API since 2016 and it has changed drastically!  
-                        Follow the directions in the Settings. You must first get a <a href="https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#" target="_blank" rel="noopener noreferrer">Web Playback SDK Access Token</a> by logging in to your Spotify account on their website.
-                        My dashboard will then automatically load and play your most current playlist.
+                        Implementation of the Spotify API was the most complex. I hadn't worked with this API since 2016 and it has changed drastically! By using Spotify's client side OAuth API and their Web Playback SDK, I was able to create a user flow where you may log in with your Spotify credentials and your most recently played list will start playing in the browser.
                     </p>
                 </div>
                 <div>

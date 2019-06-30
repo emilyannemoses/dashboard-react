@@ -71,10 +71,5 @@ p a {
     height: 95vh;
     overflow: scroll;
     grid-gap: 5px;
-    /* display: grid;
-    grid-gap: 5px;
-    text-align: center;
-    overflow: scroll;
-    grid-template-columns: 300px; */
   }
 }
