@@ -27,7 +27,7 @@ class About extends Component {
                 <div>
                     <p>
                         The widget dashboard first saves your name to your local storage. This can be deleted and reset in the Settings component. 
-                        The widget uses a weather API through the browser to find the your location and current weather as long as you approve these settings. It also displays the current time and date.
+                        The weather widget uses a weather API through the browser to find the your location and current weather as long as you approve these settings. It also displays the current time and date.
                         You have the option to link a personal online Calendar if you wish. The To-do list saves the items to local storage, and these items are deleted when checked off.
                     </p>
                     <p>
