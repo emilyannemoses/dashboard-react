@@ -4,6 +4,7 @@
     background: #b7cee8;
     overflow: scroll;
     border: 1px solid #d8dbe2;
+    padding-right: 10px;
 }
 .things li {
     display: inline-block;

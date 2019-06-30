@@ -9,6 +9,9 @@ import Home from '../Home/Home'
 import Greeting from '../Home/Greeting/Greeting'
 
 class Menu extends Component {
+    componentWillUnmount () {
+        console.log('About UNMOUNT');
+    }
     render() {
         return (
             <div>

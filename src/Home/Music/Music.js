@@ -12,7 +12,6 @@ class Music extends Component {
         this.playerCheckInterval = null;
       }
     render() {
-        console.log("Music: ",Spotify)
         return (
             <div>
                 { Spotify.error && <p>Error: {Spotify.error }</p>}
