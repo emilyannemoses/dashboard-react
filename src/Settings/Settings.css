@@ -55,3 +55,14 @@
     width: 300px;
     color: firebrick;
 }
+@media(max-width: 850px) {
+    .settings-grid {
+      width: 60vw;
+      margin: 0px 0px 20px 180px;
+      background: #fff;
+      height: 95vh;
+      display: grid;
+      grid-gap: 5px;
+      text-align: center;
+    }
+}

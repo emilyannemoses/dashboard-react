@@ -34,3 +34,8 @@ div p {
     margin-bottom: 20px;
     line-height: 1.5;
 }
+@media(max-width: 850px) {
+    .about {
+        margin: 0 10px 10px 180px;
+    }
+}

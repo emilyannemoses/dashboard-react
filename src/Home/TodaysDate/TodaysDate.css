@@ -18,3 +18,14 @@
     font-weight: 900;
     letter-spacing: 2px;
 }
+@media(max-width: 850px) {
+    .four {
+        grid-area: four;
+        height: 200px;
+        grid-column: 1;
+        border: 1px solid #d8dbe2;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

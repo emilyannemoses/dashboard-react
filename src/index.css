@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400|PT+Mono&display=swap');
-
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -7,11 +6,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
 }
-
 code {
   font-family: 'Courier New', Courier, monospace;
 }
-
 #dashboard-container {
   position: relative;
   width: 100vw;
@@ -65,4 +62,19 @@ p a {
 .content {
   max-height: 100vh;
   height: 100vh;
+}
+@media(max-width: 850px) {
+  .main-grid {
+    display: block;
+    margin: 0px 0px 20px 180px;
+    background: #fff;
+    height: 95vh;
+    overflow: scroll;
+    grid-gap: 5px;
+    /* display: grid;
+    grid-gap: 5px;
+    text-align: center;
+    overflow: scroll;
+    grid-template-columns: 300px; */
+  }
 }
