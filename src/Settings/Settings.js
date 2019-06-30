@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './Settings.css';
 import Spotify from '../spotify'
+import { authEndpoint, clientId, redirectUri, scopes } from "../config";
+import axios from 'axios';
+import hash from "../hash";
 
 class Settings extends Component {
     constructor(props) {
@@ -9,17 +12,53 @@ class Settings extends Component {
             spotify: Spotify
         }
         this.playerCheckInterval = null;
-      }
+    }
+    componentDidMount() {
+        let _token = hash.access_token
+        if (_token) {
+          this.setState({
+            token: _token,
+            playing: true
+          });
+            if (!Spotify.playing) {
+                this.getUserInfo(_token);
+            }
+        }
+    }
+    getUserInfo(token) {
+        axios.get('https://api.spotify.com/v1/me/', {
+          headers: {
+            'Authorization': 'Bearer ' + token
+          }
+        })
+        .then( (response) => {
+          this.setState({
+            user: {
+              name: `${response.data.display_name}`,
+              username: `${response.data.id}`,
+              email: `${response.data.email}`,
+              location: `${response.data.country}`
+            },
+            token: token,
+          })
+          Spotify.handleLogin(token)
+        })
+        .catch( (error) => {
+          console.log(error);
+        })
+        .then( () => {
+        })
+    }
     reset() {
         localStorage.removeItem("names");
         window.location.href="https://eamoses.github.io/dashboard-react";
     }
     render() {
-        console.log("Settings: ",Spotify)
         let lsName;
         if (localStorage.names) {
             lsName = localStorage.getItem('names').replace(/"/g,"");
         }
+        const isPlaying = this.state.playing;
         return (
             <div className="settings-grid">
                 <div className="block one">
@@ -43,16 +82,9 @@ class Settings extends Component {
 
                 <div className="block three">
                     {this.state.spotify.error && <p>Error: {this.state.spotify.error}</p>}
-                    { !this.state.spotify.loggedIn ? (
+                    { !isPlaying ? (
                         <div className="App-intro">
-                            Get your Spotify access token. <br></br>&#8595;
-                            <a href="https://beta.developer.spotify.com/documentation/web-playback-sdk/quick-start/#authenticating-with-spotify" target="_blank" rel="noopener noreferrer">here</a>.
-                            Enter your Spotify access token.<br></br>&#8595;<br></br>
-                            <input
-                                onChange={e => this.setState({ token: e.target.value })}
-                            />
-                            <br></br><br></br>
-                            <button onClick={() => this.state.spotify.handleLogin(this.state.token)}>Go</button>
+                            <a className="btn btn--loginApp-link" href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`}>Log in to Spotify</a>
                         </div>
                     ) : (
                         <div>You are currently logged in to Spotify. Refresh the browser if you need to enter a new Web Token.</div>

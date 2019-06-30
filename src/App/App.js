@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       nameVal: '',
       greetingToggle: false,
-      calendarHref: ''
+      calendarHref: '',
     }
   }
   componentDidMount(){
