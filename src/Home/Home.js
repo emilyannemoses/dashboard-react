@@ -7,6 +7,9 @@ import Time from './Time/Time';
 import Weather from './Weather/Weather';
 
 class Home extends Component {
+    componentWillUnmount () {
+        console.log('About UNMOUNT');
+    }
     render() {
         let lsName;
         if (localStorage.names) {
