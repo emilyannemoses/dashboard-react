@@ -6,6 +6,12 @@ const Spotify = {
     trackName: "Track Name",
     artistName: "Artist Name",
     albumName: "Album Name",
+    nextTrackAlbum: "",
+    nextTrackArtist: "",
+    nextTrackName: "",
+    previousTrackAlbum: "",
+    previousTrackArtist: "",
+    previousTrackName: "",
     playing: false,
     position: 0,
     duration: 1,
@@ -62,6 +68,8 @@ const Spotify = {
         if (state !== null) {
             const {
                 current_track: currentTrack,
+                previous_tracks: previousTracks,
+                next_tracks: nextTracks
                 // position,
                 // duration,
             } = state.track_window;
@@ -75,18 +83,40 @@ const Spotify = {
             this.albumName = currentTrack.album.name;
             this.artistName = currentTrack.artists.map(artist => artist.name).join(", ");
             this.playing = playing
+            if (nextTracks.length > 0) {
+                this.nextTrackArtist = nextTracks["0"].artists.map(artist => artist.name).join(", ") || nextTracks["0"].artists.name;
+                this.nextTrackAlbum = nextTracks["0"].album.name;
+                this.nextTrackName = nextTracks["0"].name;
+            }
+            if (previousTracks.length > 0) {
+                this.previousTrackArtist = previousTracks["0"].artists.map(artist => artist.name).join(", ") || previousTracks["0"].artists.name;
+                this.previousTrackAlbum = previousTracks["0"].album.name;
+                this.previousTrackName = previousTracks["0"].name;
+            }
         } else {
             this.error ="Looks like you might have swapped to another device?";
         }
     },
     onPrevClick() {
-        this.player.previousTrack();
-    },  
+        Spotify.player.previousTrack();
+        const newTrack = {
+            trackName: this.previousTrackName,
+            albumName: this.previousTrackAlbum,
+            artistName: this.previousTrackArtist
+        }
+        return newTrack;
+    },
     onPlayClick() {
-        this.player.togglePlay();
-    },  
+        Spotify.player.togglePlay();
+    },
     onNextClick() {
-        this.player.nextTrack();
+        Spotify.player.nextTrack();
+        const newTrack = {
+            trackName: this.nextTrackName,
+            albumName: this.nextTrackAlbum,
+            artistName: this.nextTrackArtist
+        }
+        return newTrack;
     }
 }
 
