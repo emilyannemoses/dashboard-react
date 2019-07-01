@@ -73,7 +73,7 @@ const Spotify = {
             // this.duration;
             this.trackName = currentTrack.name;
             this.albumName = currentTrack.album.name;
-            this.artistName = currentTrack.artists.map(artist => artist.name).join(", ");;
+            this.artistName = currentTrack.artists.map(artist => artist.name).join(", ");
             this.playing = playing
         } else {
             this.error ="Looks like you might have swapped to another device?";

@@ -39,7 +39,7 @@ class Settings extends Component {
               email: `${response.data.email}`,
               location: `${response.data.country}`
             },
-            token: token,
+            token: token
           })
           Spotify.handleLogin(token)
         })
