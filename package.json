@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://eamoses.github.io/dashboard-react/",
+  "homepage": "https://widget-dashboard-app.appspot.com/",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-regular-svg-icons": "^5.9.0",
