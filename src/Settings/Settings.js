@@ -51,7 +51,7 @@ class Settings extends Component {
     }
     reset() {
         localStorage.removeItem("names");
-        window.location.href="https://eamoses.github.io/dashboard-react";
+        window.location.href="https://widget-dashboard-app.appspot.com/";
     }
     render() {
         let lsName;
